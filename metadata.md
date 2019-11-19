@@ -1,13 +1,13 @@
 ---
 cloud: experience-cloud
-solution-title: Auditor
-solution-hub-url: https://helpx.adobe.com/support/experience-cloud/core-services.html
+solution-title: Label 1
+solution-hub-url: 
 solution-image: help/assets/experience-cloud-logo-24.png
-getting-started-title: Getting Started
-getting-started-url: https://helpx.adobe.com/experience-cloud-core-services/get-started.html
-tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/analytics/how-to/adobe-launch-publishing-process.html
-git-repo: https://git.corp.adobe.com/AdobeDocs/auditor.en
+getting-started-title: Label 2
+getting-started-url: 
+tutorials-title: Label 3
+tutorials-url: 
+git-repo: https://git.corp.adobe.com/AdobeDocs/partner-exchange.en
 ---
 
 # Metadata for internal use
