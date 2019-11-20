@@ -1,7 +1,7 @@
 ---
-title: overview
+title: landing page
 description: overview of the Partner Exchange
 ---
 
-# Overview
+# Landing Page
 
