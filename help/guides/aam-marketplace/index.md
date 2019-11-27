@@ -1,7 +1,8 @@
 ---
-title: Integration Guides
-description: Integration guides main page
+title: My beautiful Marketplace guide
+description: Marketplace Integration
 ---
 
 # Overview
-There are many opportunities to build integrations with Adobe's Experience Cloud solutions. 
+
+You may have heard of Marketplace. It’s heard of you. It’s watching you. It knows you better than you know yourself. It loves you.
