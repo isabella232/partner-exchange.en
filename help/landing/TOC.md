@@ -2,11 +2,11 @@
 cloud: experience-cloud
 product: adobe experience cloud
 sub-product: partner exchange
-archetype: partner
-user-guide-title: Experience Cloud Partner Exchange
+audience: partner
+user-guide-title: Experience Cloud Partner Exchange Landing Page
 
 ---
 
-# Table of Contents {#using}
+# Partner Exchange Landing Page {#landing}
 
 + [Overview](overview.md)
