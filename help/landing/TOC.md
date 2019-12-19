@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience cloud
 sub-product: partner exchange
-archetype: partner
-user-guide-title: Experience Cloud Partner Exchange
+audience: partner
+user-guide-title: Experience Cloud Partner Exchange Landing Page
 
 ---
 
-# Partner Exchange Guides {#guides}
+# Partner Exchange Landing Page {#landing}
 
 + Adobe Experience Platform {#aep-platform}
   + Profile Data Ingestion and Access {#profile-ingestion}
