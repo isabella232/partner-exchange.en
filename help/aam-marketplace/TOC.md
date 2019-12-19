@@ -5,6 +5,4 @@ description:
 
 # Partner Exchange Guides {#guides}
 
-+ Index
-
-welcome
++ [Index](index.md)
