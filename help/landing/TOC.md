@@ -7,6 +7,6 @@ user-guide-title: Experience Cloud Partner Exchange
 
 ---
 
-# Table of Contents {#using}
+# Experience Cloud Partner Exchange {#using}
 
 + [Overview](overview.md)
