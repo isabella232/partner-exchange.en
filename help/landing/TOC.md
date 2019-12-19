@@ -7,6 +7,11 @@ user-guide-title: Experience Cloud Partner Exchange
 
 ---
 
-# Experience Cloud Partner Exchange {#using}
+# Partner Exchange Guides {#guides}
 
-+ [Overview](overview.md)
++ Adobe Experience Platform {#aep-platform}
+  + Profile Data Ingestion and Access {#profile-ingestion}
+    + [test](partner-exchange.en/blob/master/help/aep-platform/profile-ingestion/test.md)
+  + Launch Web Extensions
+  + Launch Mobile Extensions
++ Adobe Analytics 
