@@ -12,6 +12,6 @@ user-guide-title: Experience Cloud Partner Exchange Landing Page
 + Adobe Experience Platform {#aep-platform}
   + Profile Data Ingestion and Access {#profile-ingestion}
     + [test](test.md)
-  + Launch Web Extensions
-  + Launch Mobile Extensions
-+ Adobe Analytics 
+  + Launch Web Extensions {#launch-web-extensions}
+  + Launch Mobile Extensions {#launch-mobile-extensions}
++ Adobe Analytics {#adobe-analytics}
