@@ -11,7 +11,9 @@ description: Platform Integration - Create your AEP Schema and Dataset
 
 A schema is a set of rules that represent and validate the structure and format of data. At a high level, schemas provide an abstract definition of a real-world object (such as a person) and outline what data should be included in each instance of that object (such as first name, last name, birthday, and so on). 
 
+<!-- Commenting out for now. We don't currently support external links to markdown files
 See [this documentation](https://www.adobe.io/apis/experienceplatform/home/xdm/xdmservices.html#!api-specification/markdown/narrative/technical_overview/schema_registry/schema_composition/schema_composition.md) for more details.
+-->
 
 ### Best practices for partners
 
