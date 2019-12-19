@@ -16,7 +16,7 @@ See [this documentation](https://www.adobe.io/apis/experienceplatform/home/xdm/x
 ### Best practices for partners
 
 Partner data should use a separate profile schema vs creating a mix-in for a customer’s existing profile schema and experience schema. The partner should use the our classes and mix-ins where possible.
-	
+
 * Partners should upload their data using a separate dataset instead of trying to combine their data into an existing data set.
 * Partners cannot upload their schemas to the global registry for now.
 
