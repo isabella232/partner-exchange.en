@@ -28,7 +28,8 @@ Build and test with an example schema:
 * For our example, we'll use a loyalty program profile schema. 
 * While the example is a profile schema, you can build event-based schemas using a similar process
 * We'll start with the UI method of creating schemas so you can get a feel for it, but eventually you'll probably want to use the API.
-* Run through the following tutorial: [Create a schema tutorial via the UI](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_editor_tutorial/schema_editor_tutorial.md#convert-a-multi-field-object-into-a-data-type)
+* Run through the following tutorial: [Create a schema tutorial via the UI](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_editor_tutorial/schema_editor_tutorial.md)
+<!--* Run through the following tutorial: [Create a schema tutorial via the UI](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_editor_tutorial/schema_editor_tutorial.md#convert-a-multi-field-object-into-a-data-type)-->
 
 Learn how to build schemas using the API:
 
