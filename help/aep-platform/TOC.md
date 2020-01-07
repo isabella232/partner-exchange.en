@@ -12,3 +12,4 @@ user-guide-title: Partner Exchange Platform Guide
 + [Schema and dataset](schema-and-dataset.md)
 + Profile ingestion {#profile-ingestion}
   + [Test](profile-ingestion/test.md)
+  + [Test copy](profile-ingestion/test-copy.md)
