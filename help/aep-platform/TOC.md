@@ -10,6 +10,7 @@ user-guide-title: Partner Exchange Platform Guide
 
 + [Platform Guide Overview](platform-overview.md)
 + [Schema and dataset](schema-and-dataset.md)
-+ Profile ingestion {#profile-ingestion}
++ Profile Ingestion {#profile-ingestion}
   + [Test](profile-ingestion/test.md)
   + [Test copy](profile-ingestion/test-copy.md)
+  + [Sandbox Access](profile-ingestion/sandbox-access.md)
