@@ -9,4 +9,4 @@ user-guide-title: Partner Exchange AAM Targeting Guide
 # Partner Exchange Launch Guide {#aam-targeting}
 
 + [Targeting Guide Overview](aam-targeting-overview.md)
-    + [ID Syncs](id_sync.md) 
+ + [ID Syncs](id_sync.md)
