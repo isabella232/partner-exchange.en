@@ -9,3 +9,4 @@ user-guide-title: Partner Exchange AAM Onboarding Guide
 # Partner Exchange AAM Onboarding Guide {#aam-onboarding}
 
 + [Onboarding Guide Overview](overview.md)
+  + [ID Sync](id-sync.md)
