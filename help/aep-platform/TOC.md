@@ -9,7 +9,7 @@ user-guide-title: Partner Exchange Platform Guide
 # Partner Exchange Platform Guide {#platform}
 
 + [Platform Guide Overview](platform-overview.md)
-+ [Getting Started (Prerequities)](platform-overview.md)
++ [Getting Started (Prerequities)](getting-started.md)
 + Profile Ingestion {#profile-ingestion}
   + [Access and Explore the AEP Sandbox](profile-ingestion/explore-sandbox.md)
   + [Create Schemas and Datasets](profile-ingestion/schema-and-dataset.md)
@@ -17,4 +17,3 @@ user-guide-title: Partner Exchange Platform Guide
   + [Import Real-time Data](profile-ingestion/real-time-import.md)
   + [Query the Profile](profile-ingestion/query-profile.md)
   + [Create a Deployment Guide](profile-ingestion/deployment-guide.md)
-  + [Register for the Exchange Program](help/general/exchange-registration.md)
