@@ -1,6 +1,6 @@
 ---
 title: Create your AEP Schema and Dataset
-description: Platform Integration - Create your AEP Schema and Dataset
+description: Create your AEP Schema and Dataset
 ---
 
 # Create your AEP Schema and Dataset
