@@ -16,13 +16,13 @@ In this article you will learn about:
 ## The Shared AEP Sandbox
 
 * You may have previously been given access to an Adobe Experience Cloud sandbox Org
-  - this Org would have your company name in it, for example, if your company is AcmeTech - then you would have an Adobe Experience Cloud sandbox Org named something like "AcmeTech (Exchange Partner)"
-  - This Org  would have been provisioned for you to access Adobe solutions such as Adobe Analytics, Adobe Target, Adobe Launch, etc.
-  - You, or someone at your company, will have system administration privileges to this Org (the highest level of administration capabilities)
+  * this Org would have your company name in it, for example, if your company is AcmeTech - then you would have an Adobe Experience Cloud sandbox Org named something like "AcmeTech (Exchange Partner)"
+  * This Org  would have been provisioned for you to access Adobe solutions such as Adobe Analytics, Adobe Target, Adobe Launch, etc.
+  * You, or someone at your company, will have system administration privileges to this Org (the highest level of administration capabilities)
 * Your access to AEP will NOT be through your company's Adobe Experience Cloud sandbox Org.
 * Your access to AEP will be through a shared Adobe Exchange Org.
 * Many other Adobe Exchange companies will be accessing AEP using the same Org
-  - Through the AEP Sandbox feature, your data and activities within this shared Org can not be seen or modified by the other companies; each company will have access to a different Sandbox within the shared Org.
+  * Through the AEP Sandbox feature, your data and activities within this shared Org can not be seen or modified by the other companies; each company will have access to a different Sandbox within the shared Org.
 * Your administration rights within this shared Org are very limited.
 * When you sign into the Adobe Experience Cloud you will see two Orgs within the Org menu - your own sandbox Org and the shared Org.
 * When you sign into the AEP UI you should only see the shared Org within the Org menu.
@@ -31,11 +31,11 @@ In this article you will learn about:
 
 * Submit a [support request](https://adobeexchangeec.zendesk.com/hc/en-us/requests/new) 
 * Fill out the form...
-  - Your email address
-  - Subject:  AEP sandbox request
-  - Product: General Provisioning / Sandbox
-  - Ticket Type:  Program Support - Exchange Program / Provisioning Request Questions
-  - Description: Provide a brief description of the integration use case(s) that require the use of an AEP sandbox
+  * Your email address
+  * Subject:  AEP sandbox request
+  * Product: General Provisioning / Sandbox
+  * Ticket Type:  Program Support - Exchange Program / Provisioning Request Questions
+  * Description: Provide a brief description of the integration use case(s) that require the use of an AEP sandbox
 * The invite will be sent to the email address given in the form.
 * The invite should be received within 3-X business days after submitting the form.
 
@@ -53,9 +53,9 @@ In this article you will learn about:
 There are 12 primary areas within the AEP UI. You can navigate to them using the left navigation panel.
 
 * Home - the landing screen
-  - Suggests some getting started activities
-  - Provides some links to learning content
-  - Gives a dashboard view for some of the main AEP objects, such as Schemas, DataSets and Profiles
+  * Suggests some getting started activities
+  * Provides some links to learning content
+  * Gives a dashboard view for some of the main AEP objects, such as Schemas, DataSets and Profiles
 * Workflows - launch into common workflows for bringing data into your AEP account
 * Connections / Sources - manage your sources of data coming into your account
 * Connections / Destinations - manage the connections to send data to external systems
