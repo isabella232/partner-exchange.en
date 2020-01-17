@@ -1,6 +1,6 @@
 ---
-title: Title
-description: Description
+title: Batch Import
+description: Importing batch files into AEP
 ---
 
 # Placeholder for article
