@@ -11,8 +11,6 @@ description: Create your AEP Schema and Dataset
 
 A schema is a set of rules that represent and validate the structure and format of data. At a high level, schemas provide an abstract definition of a real-world object (such as a person) and outline what data should be included in each instance of that object (such as first name, last name, birthday, and so on).
 
-Commenting out for now. We don't currently support external links to markdown files
-
 See [this documentation](https://www.adobe.io/apis/experienceplatform/home/xdm/xdmservices.html#!api-specification/markdown/narrative/technical_overview/schema_registry/schema_composition/schema_composition.md) for more details.
 
 ### Best practices for partners
@@ -28,11 +26,7 @@ Build and test with an example schema:
 * For our example, we'll use a loyalty program profile schema. 
 * While the example is a profile schema, you can build event-based schemas using a similar process
 * We'll start with the UI method of creating schemas so you can get a feel for it, but eventually you'll probably want to use the API.
-* Run through the following tutorial: [Create a schema tutorial via the UI](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_editor_tutorial/schema_editor_tutorial.md)
-<!--
-The double # in this URL creates a problem with validation. The page doesn't load properly because of the second #. Let's talk about how we want to approach this. 
-* Run through the following tutorial: [Create a schema tutorial via the UI](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_editor_tutorial/schema_editor_tutorial.md#convert-a-multi-field-object-into-a-data-type)
--->
+* Run through the following tutorial: [Create a schema tutorial via the UI](https://adobe.ly/38AmxLF)
 
 Learn how to build schemas using the API:
 
