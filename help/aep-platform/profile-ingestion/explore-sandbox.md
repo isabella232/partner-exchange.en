@@ -29,24 +29,33 @@ In this article you will learn about:
 
 ## How to Request Access to the Shared AEP Sandbox
 
-* Submit a [support request](https://adobeexchangeec.zendesk.com/hc/en-us/requests/new) 
-* Fill out the form...
+* Submit a [support request](https://adobeexchangeec.zendesk.com/hc/en-us/requests/new) with the following information:
   * Your email address
-  * Subject:  AEP sandbox request
+  * Subject:  AEP Sandbox Request
   * Product: General Provisioning / Sandbox
   * Ticket Type:  Program Support - Exchange Program / Provisioning Request Questions
   * Description: Provide a brief description of the integration use case(s) that require the use of an AEP sandbox
+    * Be sure to also provide all of the user names and emails that you would like to have added to the AEP sandbox. It is possible for additional users to be added after the request is made but the users will need to be added by Adobe via an additional ticket (see below).
 * The invite will be sent to the email address given in the form.
 * The invite should be received within 3-X business days after submitting the form.
 
 ## Receiving the Email Invitation 
 
 * If you are the primary contact that requested the AEP sandbox access, you will receive an automated email inviting them to "Get Started" with the Adobe Experience Platform.
+ * Insert link to email invite screenshot
 * You will have some administrative privileges which we'll cover in the next section
 * Instead of clicking the Get Started button navigate directly to https://platform.adobe.com (it's faster)
 * You'll need to sign in with the Adobe ID that is associated with the email address that received the invite; if this email address is not associated with an Adobe ID you'll need to quickly create one -- see Creating an Adobe ID
 
 ## Inviting Additional Users
+
+Submit a [support request](https://adobeexchangeec.zendesk.com/hc/en-us/requests/new) with the following information:
+
+* Your email address
+* Subject:  AEP Sandbox - Add Admin/User
+* Product: General Provisioning / Sandbox
+* Ticket Type:  Program Support - Exchange Program / Provisioning Request Questions
+* Description: List of users to be added (names and emails)
 
 ## Navigating the AEP UI
 
