@@ -42,7 +42,7 @@ In this article you will learn about:
 ## Receiving the Email Invitation 
 
 * If you are the primary contact that requested the AEP sandbox access, you will receive an automated email inviting them to "Get Started" with the Adobe Experience Platform.
- * ![Email Invite](profile-ingestion/images/email-invite.png)
+ * ![Email Invite](help/aep-platform/profile-ingestion/images/email-invite.png)
 * You will have some administrative privileges which we'll cover in the next section
 * Instead of clicking the Get Started button navigate directly to https://platform.adobe.com (it's faster)
 * You'll need to sign in with the Adobe ID that is associated with the email address that received the invite; if this email address is not associated with an Adobe ID you'll need to quickly create one -- see Creating an Adobe ID

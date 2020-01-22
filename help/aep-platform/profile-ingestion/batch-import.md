@@ -31,7 +31,7 @@ This article will cover the following:
 
 ## Batch Ingestion Prerequisites
 
-* Define a schema and create a dataset, go [here](profile-ingestion/schema-and-dataset.md) for instructions on how to do so. 
+* Define a schema and create a dataset.
 * Data must be formatted in JSON, Parquet, or CSV.
 * [Authenticate to the platform](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md).
 * Gather the values for required headers from the authentication tutorial linked above.
