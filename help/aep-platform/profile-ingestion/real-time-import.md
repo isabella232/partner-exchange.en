@@ -27,7 +27,7 @@ This article will cover the following:
 
 In order to stream to AEP you must first create a data inlet. Data inlets will contain attributes such as the source of streaming data and whether or not you are sending in records that belong to the Experience Data Model (XDM) schemas. After creating a data inlet you will be given a unique URL which will be used to stream data into AEP.
 
-Go [here](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/streaming_ingest/getting_started_with_platform_streaming_ingestion.md#create-a-data-inlet) for instructions on how to create a data inlet via API.
+Go [here](https://adobe.ly/2ty2LSd) for instructions on how to create a data inlet via API.
 
 ## Stream Profile Data to AEP
 
