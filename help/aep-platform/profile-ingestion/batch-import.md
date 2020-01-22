@@ -50,7 +50,8 @@ This article will cover the following:
 In this tutorial we will use JSON as the format. More format examples can be found in the [developer guide](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md)
 Create a batch using JSON as the input format (be sure to include a dataset ID and that your data conforms to the XDM schema linked to the dataset):
 
-'''JSON
+ ``` JSON
+
 curl -X POST "https://platform.adobe.io/data/foundation/import/batches" \
   -H "Accept: application/json" \
   -H "x-gw-ims-org-id: {IMS_ORG}" \
@@ -63,11 +64,13 @@ curl -X POST "https://platform.adobe.io/data/foundation/import/batches" \
                 "format": "json"
            }
       }'
-'''
+
+ ``` 
 
 Response:
 
-'''JSON
+ ``` JSON
+
 {
     "id": "{BATCH_ID}",
     "imsOrg": "{IMS_ORG}",
@@ -85,13 +88,15 @@ Response:
     "createdUser": "{USER_ID}",
     "updatedUser": "{USER_ID}"
 }
-'''
+
+ ``` 
 
 ## Upload Files
 
 Files can now be uploaded to the newly created batch (using the batch_id from the response above).
 
-'''JSON
+ ``` JSON
+
 curl -X PUT "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID}/datasets/{DATASET_ID}/files/{FILE_NAME}.json" \
   -H "content-type: application/octet-stream" \
   -H "x-gw-ims-org-id: {IMS_ORG}" \
@@ -99,48 +104,59 @@ curl -X PUT "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID}
   -H "Authorization: Bearer {ACCESS_TOKEN}" \
   -H "x-api-key : {API_KEY}" \
   --data-binary "@{FILE_PATH_AND_NAME}.json"
-'''
+
+ ``` 
 
 >Note: The API only supports single-part upload. Ensure that the content-type is application/octet-stream.
 
 Response:
 
-'''
+ ``` 
+
 200 OK
-'''
+
+ ``` 
 
 ## Complete a Batch
 
 Once all the files have been uploaded, this call will signal that the batch is ready for promotion:
 
-'''JSON
+ ``` JSON
+
 curl -X POST "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID}?action=COMPLETE" \
   -H "x-gw-ims-org-id: {IMS_ORG}" \
   -H "x-sandbox-name: {SANDBOX_NAME}" \
   -H "Authorization: Bearer {ACCESS_TOKEN}" \
   -H "x-api-key : {API_KEY}"
-'''
+
+ ``` 
 
 Response:
-'''
+
+ ``` 
+
 200 OK
-'''
+
+ ``` 
 
 ## Check the Status of a Batch
 
 The batch's status can be checked while waiting for files to be uploaded. The various batch ingestion statuses can be found [here](https://adobe.ly/2TMMCmj).
 
-'''JSON
+ ``` JSON
+
 curl GET "https://platform.adobe.io/data/foundation/catalog/batch/{BATCH_ID}" \
   -H "Authorization: Bearer {ACCESS_TOKEN}" \
   -H "x-gw-ims-org-id: {IMS_ORG}" \
   -H "x-sandbox-name: {SANDBOX_NAME}" \
   -H "x-api-key: {API_KEY}"
-'''
+
+ ``` 
 
 Response:
 
-'''JSON
+ ``` JSON
+
 {
     "{BATCH_ID}": {
         "imsOrg": "{IMS_ORG}",
@@ -226,4 +242,5 @@ Response:
         }
     }
 }
-'''
+
+ ``` 
