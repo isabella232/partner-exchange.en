@@ -18,7 +18,7 @@ General overview of the Real-time Customer Profile can be found [here].(https://
 
 ## Using the API
 
-Be sure to read over the [Authenticate to Adobe I/O](help/general/io-integration.md) guide before procedding. You will want to have an I/O integration and the required headers before proceeding. 
+Be sure to read over the Authenticate to Adobe I/O (help/general/io-integration.md) guide before proceeding. 
 
 ### Accessing Profile Data
 
