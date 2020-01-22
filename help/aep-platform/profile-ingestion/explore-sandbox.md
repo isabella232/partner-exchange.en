@@ -51,11 +51,11 @@ In this article you will learn about:
 
 Submit a [support request](https://adobeexchangeec.zendesk.com/hc/en-us/requests/new) with the following information:
 
-  * Your email address
-  * Subject:  AEP Sandbox - Add Admin/User
-  * Product: General Provisioning / Sandbox
-  * Ticket Type:  Program Support - Exchange Program / Provisioning Request Questions
-  * Description: List of users to be added (names and emails)
+* Your email address
+* Subject:  AEP Sandbox - Add Admin/User
+* Product: General Provisioning / Sandbox
+* Ticket Type:  Program Support - Exchange Program / Provisioning Request Questions
+* Description: List of users to be added (names and emails)
 
 ## Navigating the AEP UI
 
