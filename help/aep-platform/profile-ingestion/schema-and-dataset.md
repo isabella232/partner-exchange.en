@@ -1,9 +1,9 @@
 ---
-title: Create your AEP Schema and Dataset
-description: Create your AEP Schema and Dataset
+title: Create AEP Schema and Dataset
+description: Create AEP Schema and Dataset
 ---
 
-# Create your AEP Schema and Dataset
+# Create AEP Schema and Dataset
 
 ## Create a Schema
 
@@ -15,37 +15,34 @@ See [this documentation](https://www.adobe.io/apis/experienceplatform/home/xdm/x
 
 ### Best practices for partners
 
-Partner data should use a separate profile schema vs creating a mix-in for a customer's existing profile schema and experience schema. The partner should use the our classes and mix-ins where possible.
+Partner data should use a separate profile schema vs creating a mix-in for a customer's existing profile schema and experience schema. Partners should use Adobe classes and mix-ins where possible.
 
 * Partners should upload their data using a separate dataset instead of trying to combine their data into an existing data set.
 * Partners cannot upload their schemas to the global registry for now.
 
 Build and test with an example schema:
 
-* You must have access to a platform sandbox to run through the following tutorial.
-* For our example, we'll use a loyalty program profile schema. 
-* While the example is a profile schema, you can build event-based schemas using a similar process
-* We'll start with the UI method of creating schemas so you can get a feel for it, but eventually you'll probably want to use the API.
+* This example will use the loyalty program profile schema. 
+* While the example is a profile schema, event-based schemas can be used using a similar process.
+* Schemas can be created in the UI or using the API.
 * Run through the following tutorial: [Create a schema tutorial via the UI](https://adobe.ly/38AmxLF)
 
 Learn how to build schemas using the API:
 
-* You must have access to a platform sandbox to run through the following tutorial. 
 * [Create an I/O integration](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)
 
-  * Note that in the future, the Exchange App Manager will allow customers to pass you the authentication credentials automatically. See [this documentation](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360026470931-Adobe-I-O-Console-Access-APIs-to-Integrate-with-Experience-Cloud-Products).
-  * [Create a schema using the Schema Registry API](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_registry_api_tutorial/schema_registry_api_tutorial.md)
+* [Create a schema using the Schema Registry API](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_registry_api_tutorial/schema_registry_api_tutorial.md)
 
 ## Create an AEP DataSet
 
 ### What is a dataset?
 
-See [this documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/data-ingestion-overview.md) and this documentation
+See [this documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/data-ingestion-overview.md) and [this documentation](https://adobe.ly/38kmT8H)
 
 Create a dataset via the UI:
 
 * Click create dataset
-* Create from schema—select a schema that you created earlier
+* Create from schema
 * Click finish
 * [Create a dataset using the APIs](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_dataset_tutorial/creating_a_dataset_tutorial.md)
-* For now: you have to use the APIs if you want to check the option of "for use in profile". Check the option of for use in profile—you can't change this afterward!
+

@@ -19,15 +19,6 @@ This article will cover the following:
 * How to complete a batch
 * How to check the status of a batch
 
-## Reference Articles
-
-* [Data Ingestion API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs)
-* [Batch Ingestion Overview](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/ingest_architectural_overview.md)
-* [Batch Ingestion Developer Guide](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md)
-* [Batch Ingestion Troubleshooting Guide](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_troubleshooting_guide.md)
-* [Data Ingestion Postman Collection](https://github.com/adobe/experience-platform-postman-samples/blob/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json)
-* [Authentication Tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)
-
 
 ## Batch Ingestion Prerequisites
 
@@ -107,7 +98,7 @@ curl -X PUT "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID}
 
  ``` 
 
->Note: The API only supports single-part upload. Ensure that the content-type is application/octet-stream.
+>Note: The API only supports single-part upload, meaning each file/micro-batch will need to be uploaded with individual calls. Ensure that the content-type is application/octet-stream.
 
 Response:
 
@@ -141,7 +132,9 @@ Response:
 
 ## Check the Status of a Batch
 
-The batch's status can be checked while waiting for files to be uploaded. The various batch ingestion statuses can be found [here](https://adobe.ly/2TMMCmj).
+The batch status can be checked in the UI or via the API (see call below). To check in the UI, navigate to the DataSet to see the status.
+
+The various batch ingestion statuses can be found [here](https://adobe.ly/2TMMCmj).
 
  ``` JSON
 
@@ -244,3 +237,12 @@ Response:
 }
 
  ``` 
+
+## Reference Articles
+
+* [Data Ingestion API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs)
+* [Batch Ingestion Overview](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/ingest_architectural_overview.md)
+* [Batch Ingestion Developer Guide](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md)
+* [Batch Ingestion Troubleshooting Guide](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_troubleshooting_guide.md)
+* [Data Ingestion Postman Collection](https://github.com/adobe/experience-platform-postman-samples/blob/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json)
+* [Authentication Tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)
