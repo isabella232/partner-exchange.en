@@ -5,44 +5,46 @@ description: Create AEP Schema and Dataset
 
 # Create AEP Schema and Dataset
 
-## Create a Schema
+## Schemas
 
-### What is a Schema?
+### What is a schema?
 
-A schema is a set of rules that represent and validate the structure and format of data. At a high level, schemas provide an abstract definition of a real-world object (such as a person) and outline what data should be included in each instance of that object (such as first name, last name, birthday, and so on).
+A schema is a set of rules that represent and validate the structure and format of data. At a high level, schemas provide an abstract definition of a real-world object (such as a person) and outline what data should be included in each instance of that object (such as first name, last name, birthday, and so on). Schemas can be created in the UI or using the Experience Platform APIs.
 
 See [this documentation](https://www.adobe.io/apis/experienceplatform/home/xdm/xdmservices.html#!api-specification/markdown/narrative/technical_overview/schema_registry/schema_composition/schema_composition.md) for more details.
 
-### Best practices for partners
+### Creating a schema 
 
-Partner data should use a separate profile schema vs creating a mix-in for a customer's existing profile schema and experience schema. Partners should use Adobe classes and mix-ins where possible.
+You can build an example schema using the UI by following this [tutorial](https://adobe.ly/38AmxLF). This example uses the loyalty program profile schema. While the example is a profile schema, event-based schemas can be used using a similar process.
 
-* Partners should upload their data using a separate dataset instead of trying to combine their data into an existing data set.
-* Partners cannot upload their schemas to the global registry for now.
+If you'd like to build a schema using the APIs, you must have an existing Adobe I/O integration with Experience Platform permissions enabled. If you don't already have one, check out the following documentation for information on how to [create an I/O integration](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)
 
-Build and test with an example schema:
+Then visit [this link](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_registry_api_tutorial/schema_registry_api_tutorial.md) to learn how to build schemas using the API
 
-* This example will use the loyalty program profile schema. 
-* While the example is a profile schema, event-based schemas can be used using a similar process.
-* Schemas can be created in the UI or using the API.
-* Run through the following tutorial: [Create a schema tutorial via the UI](https://adobe.ly/38AmxLF)
-
-Learn how to build schemas using the API:
-
-* [Create an I/O integration](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)
-
-* [Create a schema using the Schema Registry API](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_registry_api_tutorial/schema_registry_api_tutorial.md)
-
-## Create an AEP DataSet
+## AEP DataSets
 
 ### What is a dataset?
 
+All data that is brought into Adobe Experience Platform is contained in datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store.
+
+Catalog Service is the system of record for data location and lineage within Experience Platform, and is used to create and manage datasets. Catalog tracks the metadata for each dataset, which includes a reference to the Experience Data Model (XDM) schema the dataset conforms to (explained in the next section) and the number of records ingested into that dataset.
+
 See [this documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/data-ingestion-overview.md) and [this documentation](https://adobe.ly/38kmT8H)
+
+### Creating an AEP dataset
+
+![Creating Dataset Animated Gif](images/creating_a_dataset.gif "Creating a Dataset")
 
 Create a dataset via the UI:
 
-* Click create dataset
-* Create from schema
-* Click finish
-* [Create a dataset using the APIs](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_dataset_tutorial/creating_a_dataset_tutorial.md)
+1. Click create dataset
+2. Create from schema
+3. Click finish
+4. [Create a dataset using the APIs](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_dataset_tutorial/creating_a_dataset_tutorial.md)
 
+## Schema and dataset best practices for partners
+
+* Partner data should use a separate profile schema vs creating a mix-in for a customer's existing profile schema and experience schema. 
+* Partners should use Adobe classes and mix-ins where possible.
+* Partners should upload their data using a separate dataset instead of trying to combine their data into an existing data set.
+* Partners cannot upload their schemas to the global registry for now.
