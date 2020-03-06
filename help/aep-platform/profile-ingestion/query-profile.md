@@ -7,24 +7,28 @@ description: Use APIs to query the unified profile
 
 ## Overview
 
-The Adobe Experience Platform can access the customer profile in real-time; the Experience Platform Real-time Customer Profile API has been designed for interacting with that. A tutorial has been created to help users understand how to access the real-time customer profile data using the Profile API.
+The Adobe Experience Platform can access the customer profile in real-time; the [Experience Platform Real-time Customer Profile API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs) has been designed for interacting with that. A tutorial has been created to help users understand how to [access the real-time customer profile data using the Profile API](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/consuming_unified_profile_data/consuming_unified_profile_data.md).
+
 This article will substantially reference the tutorial linked above.
 
 ## Using the API
 
 ### Authenticate to Platform
 
-In order to work with any data in the Adobe Experience platform an application needs to be authenticate to the system. The authentication guide has everything needed to do this.
+In order to work with any data in the Adobe Experience platform an application needs to be authenticate to the system. The [authentication guide](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md) has everything needed to do this.
 
-This step-by-step tutorial has what is needed to authenticate to the Experience Platform. Any troubleshooting issues in regard to authentication errors can first ne worked through following the tutorial.
+This [step-by-step tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md) has what is needed to authenticate to the Experience Platform. Any troubleshooting issues in regard to authentication errors can first ne worked through following the tutorial.
 
 ### API Path
 
-The platform gateway URL needed for the realt0ime customer profile API is https://platform.adobe.io/
+The platform gateway URL needed for the real-time customer profile API is:
+`https://platform.adobe.io/`
 
-The base path for the API is /data/core/ups/access/entities
+The base path for the API is:
+`/data/core/ups/access/entities`
 
-An example of a complete path is https://platform.adobe.io/data/core/ups/access/entities
+An example of a complete path is:
+`https://platform.adobe.io/data/core/ups/access/entities`
 
 ### Header Information
 
@@ -35,7 +39,7 @@ The header must include:
 * x-sandbox-name – obtained from the Adobe Integration Manager
 * Content-Type: application/json
 
-More information explained about the header can be found in the tutorial.
+More information explained about the header can be found in the [tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/consuming_unified_profile_data/consuming_unified_profile_data.md#gather-values-for-required-headers).
 
 ### Pagination
 
@@ -108,11 +112,11 @@ A successful response returns the next page of results. This example demonstrate
 
 ## Access Real-time Customer Profile
 
-Below are steps necessary to accessing the Profile API. These are only a few functions with examples, many more can be accomplished that are not listed in the tutorial or this article. All possible functions can be found in the Profile API documentation.
+Below are steps necessary to accessing the Profile API. These are only a few functions with examples, many more can be accomplished that are not listed in the tutorial or this article. All possible functions can be found in the Profile API [documentation](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs).
 
 ### Access Profile Data by Identity
 
-The API allows to access profile information by an identify. This is done by making a GET request to /access/entities with the entity ID as one of the parameter and entity ID namespace. NOTE: Keep in mind that any request that returns 50 records will only deliver a 422 HTTP status and a message that reads “too many related identities” and the search will need to be narrowed with more parameters.
+The API allows to access profile information by an identify. This is done by making a GET request to /access/entities with the entity ID as one of the parameters and entity ID namespace. NOTE: Keep in mind that any request that returns 50 records will only deliver a 422 HTTP status and a message that reads “too many related identities” and the search will need to be narrowed with more parameters.
 
 Request:
 
@@ -447,8 +451,7 @@ A successful response returns a paginated list of time series events and associa
 
 ## Reference
 
-* Real-time Customer Profile API
-* Access Real-time Customer profile data using the Profile API tutorial
-* Experience Platform Authentication Guide
-* Experience Platform Authentication tutorial
-
+* [Real-time Customer Profile API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs)
+* [Access Real-time Customer profile data using the Profile API tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/consuming_unified_profile_data/consuming_unified_profile_data.md)
+* [Experience Platform Authentication Guide](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md)
+* [Experience Platform Authentication tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)
