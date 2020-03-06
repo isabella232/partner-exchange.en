@@ -7,7 +7,7 @@ description: Use APIs to query the unified profile
 
 ## Overview
 
-The Adobe Experience Platform can access the customer profile in real-time; the [Experience Platform Real-time Customer Profile API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs) has been designed for interacting with that. A tutorial has been created to help users understand how to [access the real-time customer profile data using the Profile API](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/consuming_unified_profile_data/consuming_unified_profile_data.md).
+The Adobe Experience Platform can access the customer profile in real-time; the [Experience Platform Real-time Customer Profile API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs) has been designed for interacting with that. A tutorial has been created to help users understand how to [access the real-time customer profile data using the Profile API](https://adobe.ly/39vk8CM).
 
 This article will substantially reference the tutorial linked above.
 
@@ -15,9 +15,9 @@ This article will substantially reference the tutorial linked above.
 
 ### Authenticate to Platform
 
-In order to work with any data in the Adobe Experience platform an application needs to be authenticate to the system. The [authentication guide](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md) has everything needed to do this.
+In order to work with any data in the Adobe Experience platform an application needs to be authenticate to the system. The [authentication guide](https://adobe.ly/2ICItuJ) has everything needed to do this.
 
-This [step-by-step tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md) has what is needed to authenticate to the Experience Platform. Any troubleshooting issues in regard to authentication errors can first ne worked through following the tutorial.
+This [step-by-step tutorial](https://adobe.ly/2PUWeZz) has what is needed to authenticate to the Experience Platform. Any troubleshooting issues in regard to authentication errors can first ne worked through following the tutorial.
 
 ### API Path
 
@@ -39,7 +39,7 @@ The header must include:
 * x-sandbox-name – obtained from the Adobe Integration Manager
 * Content-Type: application/json
 
-More information explained about the header can be found in the [tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/consuming_unified_profile_data/consuming_unified_profile_data.md#gather-values-for-required-headers).
+More information explained about the header can be found in the [tutorial](https://adobe.ly/2PTHuKv).
 
 ### Pagination
 
@@ -452,6 +452,6 @@ A successful response returns a paginated list of time series events and associa
 ## Reference
 
 * [Real-time Customer Profile API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs)
-* [Access Real-time Customer profile data using the Profile API tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/consuming_unified_profile_data/consuming_unified_profile_data.md)
-* [Experience Platform Authentication Guide](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md)
-* [Experience Platform Authentication tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)
+* [Access Real-time Customer profile data using the Profile API tutorial](https://adobe.ly/39vk8CM)
+* [Experience Platform Authentication Guide](hhttps://adobe.ly/2ICItuJ)
+* [Experience Platform Authentication tutorial](https://adobe.ly/2PUWeZz)
