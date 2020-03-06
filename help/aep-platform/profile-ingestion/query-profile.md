@@ -7,7 +7,7 @@ description: Use APIs to query the unified profile
 
 ## Overview
 
-The Adobe Experience Platform can access the customer profile in real-time; the [Experience Platform Real-time Customer Profile API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs) has been designed for interacting with that. A tutorial has been created to help users understand how to [access the real-time customer profile data using the Profile API](https://adobe.ly/39vk8CM).
+The Adobe Experience Platform can access the customer profile in real-time; the [Experience Platform Real-time Customer Profile API](https://adobe.ly/2TtDHWr) has been designed for interacting with that. A tutorial has been created to help users understand how to [access the real-time customer profile data using the Profile API](https://adobe.ly/39vk8CM).
 
 This article will substantially reference the tutorial linked above.
 
@@ -21,14 +21,11 @@ This [step-by-step tutorial](https://adobe.ly/2PUWeZz) has what is needed to aut
 
 ### API Path
 
-The platform gateway URL needed for the real-time customer profile API is:
-`https://platform.adobe.io/`
+The platform gateway URL needed for the real-time customer profile API is: `https://platform.adobe.io/`
 
-The base path for the API is:
-`/data/core/ups/access/entities`
+The base path for the API is: `/data/core/ups/access/entities`
 
-An example of a complete path is:
-`https://platform.adobe.io/data/core/ups/access/entities`
+An example of a complete path is: `https://platform.adobe.io/data/core/ups/access/entities`
 
 ### Header Information
 
