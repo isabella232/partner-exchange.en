@@ -38,76 +38,7 @@ The header must include:
 
 More information explained about the header can be found in the [tutorial](https://adobe.ly/2PTHuKv).
 
-### Pagination
-
-Results are paginated when retrieving time series events. If there are subsequent pages of results, the response's _page.next parameter will contain an ID. Additionally, the response's _links.next.href parameter provides a request URI for retrieving the subsequent page.
-
-Request:
-
-The following request retrieves the next page of results by using the _links.next.href URI as the request path.
-
-```
-curl -X GET \
-
-  'https://platform.adobe.io/data/core/ups/access/entities?start=c8d11988-6b56-4571-a123-b6ce74236037&orderby=timestamp&schema.name=_xdm.context.experienceevent&relatedSchema.name=_xdm.context.profile&relatedEntityId=89149270342662559642753730269986316900&relatedEntityIdNS=ECID&fields=endUserIDs,web,channel&startTime=1531260476000&endTime=1531260480000&limit=1' \
-  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
-  -H 'x-api-key: {API_KEY}' \
-  -H 'x-gw-ims-org-id: {IMS_ORG}' \
-  -H 'x-sandbox-name: {SANDBOX_NAME}'
-```
-
-Response:
-
-A successful response returns the next page of results. This example demonstrates a response where there are no subsequent pages of results, as indicated by the empty string values of _page.next and _links.next.href.
-
-```
-{
-    "_page": {
-        "orderby": "timestamp",
-        "start": "c8d11988-6b56-4571-a123-b6ce74236037",
-        "count": 1,
-        "next": ""
-    },
-    "children": [
-        {
-            "relatedEntityId": "A29cgveD5y64e2RixjUXNzcm",
-            "entityId": "c8d11988-6b56-4571-a123-b6ce74236037",
-            "timestamp": 1531260477000,
-            "entity": {
-                "endUserIDs": {
-                    "_experience": {
-                        "ecid": {
-                            "id": "89149270342662559642753730269986316900",
-                            "namespace": {
-                                "code": "ecid"
-                            }
-                        }
-                    }
-                },
-                "channel": {
-                    "_type": "web"
-                },
-                "web": {
-                    "webPageDetails": {
-                        "name": "Fernie Snow",
-                        "pageViews": {
-                            "value": 1
-                        }
-                    }
-                }
-            },
-            "lastModifiedAt": "2018-08-21T06:50:01Z"
-        }
-    ],
-    "_links": {
-        "next": {
-            "href": ""
-        }
-    }
-}
-```
-
-## Access Real-time Customer Profile
+## Access Real-time Customer Profiles by Identities
 
 Below are steps necessary to accessing the Profile API. These are only a few functions with examples, many more can be accomplished that are not listed in the tutorial or this article. All possible functions can be found in the Profile API [documentation](https://adobe.ly/2TtDHWr).
 
@@ -380,6 +311,10 @@ A successful response returns the requested fields of entities specified in the 
 }
 ```
 
+## Time Series Events
+
+Below are steps necessary to accessing the real-time profile events. These are only a few functions with examples, many more can be accomplished that are not listed in the tutorial or this article. All possible functions can be found in the Profile API [documentation](https://adobe.ly/2TtDHWr).
+
 ### Access Time Series Events for a Profile by Identity
 
 Time series events are accessed by the identity of their associated profile entity by making a GET request to the /access/entities endpoint. This identity consists of an ID value (entityId) and an identity namespace (entityIdNS).
@@ -441,6 +376,75 @@ A successful response returns a paginated list of time series events and associa
     "_links": {
         "next": {
             "href": "/entities?start=c8d11988-6b56-4571-a123-b6ce74236037&orderby=timestamp&schema.name=_xdm.context.experienceevent&relatedSchema.name=_xdm.context.profile&relatedEntityId=89149270342662559642753730269986316900&relatedEntityIdNS=ECID&fields=endUserIDs,web,channel&startTime=1531260476000&endTime=1531260480000&limit=1"
+        }
+    }
+}
+```
+
+### Pagination for Time Series Events for a Profile
+
+Results are paginated when retrieving time series events. If there are subsequent pages of results, the response's _page.next parameter will contain an ID. Additionally, the response's _links.next.href parameter provides a request URI for retrieving the subsequent page.
+
+Request:
+
+The following request retrieves the next page of results by using the _links.next.href URI as the request path.
+
+```
+curl -X GET \
+
+  'https://platform.adobe.io/data/core/ups/access/entities?start=c8d11988-6b56-4571-a123-b6ce74236037&orderby=timestamp&schema.name=_xdm.context.experienceevent&relatedSchema.name=_xdm.context.profile&relatedEntityId=89149270342662559642753730269986316900&relatedEntityIdNS=ECID&fields=endUserIDs,web,channel&startTime=1531260476000&endTime=1531260480000&limit=1' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {IMS_ORG}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}'
+```
+
+Response:
+
+A successful response returns the next page of results. This example demonstrates a response where there are no subsequent pages of results, as indicated by the empty string values of _page.next and _links.next.href.
+
+```
+{
+    "_page": {
+        "orderby": "timestamp",
+        "start": "c8d11988-6b56-4571-a123-b6ce74236037",
+        "count": 1,
+        "next": ""
+    },
+    "children": [
+        {
+            "relatedEntityId": "A29cgveD5y64e2RixjUXNzcm",
+            "entityId": "c8d11988-6b56-4571-a123-b6ce74236037",
+            "timestamp": 1531260477000,
+            "entity": {
+                "endUserIDs": {
+                    "_experience": {
+                        "ecid": {
+                            "id": "89149270342662559642753730269986316900",
+                            "namespace": {
+                                "code": "ecid"
+                            }
+                        }
+                    }
+                },
+                "channel": {
+                    "_type": "web"
+                },
+                "web": {
+                    "webPageDetails": {
+                        "name": "Fernie Snow",
+                        "pageViews": {
+                            "value": 1
+                        }
+                    }
+                }
+            },
+            "lastModifiedAt": "2018-08-21T06:50:01Z"
+        }
+    ],
+    "_links": {
+        "next": {
+            "href": ""
         }
     }
 }
