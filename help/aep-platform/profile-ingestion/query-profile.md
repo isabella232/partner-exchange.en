@@ -109,7 +109,7 @@ A successful response returns the next page of results. This example demonstrate
 
 ## Access Real-time Customer Profile
 
-Below are steps necessary to accessing the Profile API. These are only a few functions with examples, many more can be accomplished that are not listed in the tutorial or this article. All possible functions can be found in the Profile API [documentation](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs).
+Below are steps necessary to accessing the Profile API. These are only a few functions with examples, many more can be accomplished that are not listed in the tutorial or this article. All possible functions can be found in the Profile API [documentation](https://adobe.ly/2TtDHWr).
 
 ### Access Profile Data by Identity
 
@@ -448,7 +448,7 @@ A successful response returns a paginated list of time series events and associa
 
 ## Reference
 
-* [Real-time Customer Profile API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs)
+* [Real-time Customer Profile API](https://adobe.ly/2TtDHWr)
 * [Access Real-time Customer profile data using the Profile API tutorial](https://adobe.ly/39vk8CM)
 * [Experience Platform Authentication Guide](https://adobe.ly/2ICItuJ)
 * [Experience Platform Authentication tutorial](https://adobe.ly/2PUWeZz)
