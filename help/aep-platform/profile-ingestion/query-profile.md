@@ -454,4 +454,4 @@ A successful response returns a paginated list of time series events and associa
 * [Real-time Customer Profile API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs)
 * [Access Real-time Customer profile data using the Profile API tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/consuming_unified_profile_data/consuming_unified_profile_data.md)
 * [Experience Platform Authentication Guide](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md)
-* [Experience Platform Authentication tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)
+* [Experience Platform Authentication tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)
