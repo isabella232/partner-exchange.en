@@ -10,7 +10,7 @@ user-guide-title: Partner Exchange Platform Guide
 
 + [Platform Guide Overview](platform-overview.md)
 + [Getting Started (Prerequities)](getting-started.md)
-+ Profile Ingestion {#profile-ingestion}
++ Data Ingestion and Profile Access {#profile-ingestion}
   + [Access and Explore the AEP Sandbox](profile-ingestion/explore-sandbox.md)
   + [Create Schemas and Datasets](profile-ingestion/schema-and-dataset.md)
   + [Import Batch Data](profile-ingestion/batch-import.md)
