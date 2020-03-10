@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-solution-title: Label 1
+solution-title: Partner Exchange
 solution-hub-url: 
 solution-image: help/assets/experience-cloud-logo-24.png
 getting-started-title: Label 2
