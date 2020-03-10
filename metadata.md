@@ -8,6 +8,7 @@ getting-started-url:
 tutorials-title: Label 3
 tutorials-url: 
 git-repo: https://git.corp.adobe.com/AdobeDocs/partner-exchange.en
+index: no
 ---
 
 # Metadata for internal use
