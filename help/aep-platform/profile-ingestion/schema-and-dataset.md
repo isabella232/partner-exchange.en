@@ -1,9 +1,9 @@
 ---
-title: Create AEP Schema and Dataset
-description: Create AEP Schema and Dataset
+title: Create AEP Schemas and Datasets
+description: Create Schemas and Datasets
 ---
 
-# Create AEP Schema and Dataset
+# Create Schemas and Datasets
 
 ## Schemas
 
@@ -21,7 +21,7 @@ If you'd like to build a schema using the APIs, you must have an existing Adobe 
 
 Then visit [this link](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_registry_api_tutorial/schema_registry_api_tutorial.md) to learn how to build schemas using the API
 
-## AEP DataSets
+## Datasets
 
 ### What is a dataset?
 
@@ -31,7 +31,7 @@ Catalog Service is the system of record for data location and lineage within Exp
 
 See [this documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/data-ingestion-overview.md) and [this documentation](https://adobe.ly/38kmT8H)
 
-### Creating an AEP dataset
+### Creating a dataset
 
 ![Creating Dataset Animated Gif](images/creating_a_dataset.gif "Creating a Dataset")
 
@@ -46,5 +46,5 @@ Create a dataset via the UI:
 
 * Partner data should use a separate profile schema vs creating a mix-in for a customer's existing profile schema and experience schema. 
 * Partners should use Adobe classes and mix-ins where possible.
-* Partners should upload their data using a separate dataset instead of trying to combine their data into an existing data set.
+* Partners should upload their data using a separate dataset instead of trying to combine their data into an existing dataset.
 * Partners cannot upload their schemas to the global registry for now.
