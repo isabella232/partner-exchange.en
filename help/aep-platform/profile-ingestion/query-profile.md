@@ -1,9 +1,9 @@
 ---
-title: Query the Unified Profile 
-description: Use APIs to query the unified profile
+title: Access the Unified Profile 
+description: Using APIs to Access the Unified Profile
 ---
 
-# Query the Unified Profile using the Profile API
+# Access the Unified Profile using the Profile API
 
 ## Overview
 
