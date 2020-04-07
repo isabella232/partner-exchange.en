@@ -11,6 +11,10 @@ The Adobe Experience Platform can access the customer profile in real-time; the 
 
 This article will substantially reference the tutorial linked above.
 
+The [Postman collection](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman) will be referenced throughout the article using the associated calls by number. More details on installing and using the Postman collection are available on the Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) page. There are also sample datasets of [loyalty](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) and [profile](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) data.
+
+For this section, use the Postman folder 5: Profile Lookup, 5a: Real-time lookup PROFILE data OR 5b: Real-time lookup EVENT data.
+
 ## Using the API
 
 ### Authenticate to Platform

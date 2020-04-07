@@ -5,6 +5,8 @@ description: Create Schemas and Datasets
 
 # Create Schemas and Datasets
 
+The [Postman collection](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman) will be referenced throughout the article using the associated calls by number. More details on installing and using the Postman collection are available on the Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) page. There are also sample datasets of [loyalty](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) and [profile](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) data.
+
 ## Schemas
 
 ### What is a schema?
@@ -17,9 +19,11 @@ See [this documentation](https://www.adobe.io/apis/experienceplatform/home/xdm/x
 
 You can build an example schema using the UI by following this [tutorial](https://adobe.ly/38AmxLF). This example uses the loyalty program profile schema. While the example is a profile schema, event-based schemas can be used using a similar process.
 
-If you'd like to build a schema using the APIs, you must have an existing Adobe I/O integration with Experience Platform permissions enabled. If you don't already have one, check out the following documentation for information on how to [create an I/O integration](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)
+If you'd like to build a schema using the APIs, you must have an existing Adobe I/O integration with Experience Platform permissions enabled. If you don't already have one, check out the following documentation for information on how to [create an I/O integration](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md).
 
-Then visit [this link](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_registry_api_tutorial/schema_registry_api_tutorial.md) to learn how to build schemas using the API
+Then visit [this link](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_registry_api_tutorial/schema_registry_api_tutorial.md) to learn how to build schemas using the API.
+
+To create a schema via Postman, use the calls contained in folders 1: Create Schema, 1a: Create Schema for PROFILE data OR 1b: Create Schema for EVENT data.
 
 ## Datasets
 
@@ -41,6 +45,10 @@ Create a dataset via the UI:
 2. Create from schema
 3. Click finish
 4. [Create a dataset using the APIs](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_dataset_tutorial/creating_a_dataset_tutorial.md)
+
+To create a dataset via Postman, use folders 2: Create Dataset, 2a: Create dataset for PROFILE data OR 2b: Create dataset for EVENT data
+
+
 
 ## Schema and dataset best practices for partners
 

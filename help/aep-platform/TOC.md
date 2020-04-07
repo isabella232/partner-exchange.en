@@ -3,10 +3,10 @@ cloud: experience-cloud
 product: adobe experience cloud
 sub-product: partner exchange
 audience: partner
-user-guide-title: Partner Exchange Platform Guide
+user-guide-title: Adobe Exchange - Integration Guides
 ---
 
-# Partner Exchange Platform Guide {#platform}
+# Adobe Exchange - Integration Guides {#integrationguides}
 
 + Data Ingestion and Profile Access {#profile-ingestion}
   + [Integration Guide Overview](profile-ingestion/profile-integration-overview.md)
