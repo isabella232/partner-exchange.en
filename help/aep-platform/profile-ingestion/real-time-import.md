@@ -15,6 +15,8 @@ This article will cover the following:
 * Streaming to the XDM ExperienceEvent
 * Using AEP the Launch extension to stream
 
+The [Postman collection](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman) will be referenced throughout the article using the associated calls by number. More details on installing and using the Postman collection are available on the Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) page. There are also sample datasets of [loyalty](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) and [profile](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) data.
+
 ## Prerequisites
 
 * [Authenticate to the platform](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md).
@@ -67,6 +69,8 @@ Response:
 
 ## Stream Profile Data to AEP
 
+For this section, use Postman call folders: 3: Real-time import, 3a: Real-time import for PROFILE data.
+
 Detailed JSON requests with responses for streaming profile data are documented [here](https://adobe.ly/2TFmAkH).
 
 Steps:
@@ -78,6 +82,8 @@ Steps:
 5. Retrieve the newly created profile
 
 ## Stream Experience Events to AEP
+
+For this section, use Postman call folders: 3: Real-time import, 3b: Real-time import for PROFILE data.
 
 Detailed JSON requests with responses for streaming experience data are documented [here](https://adobe.ly/2VXKtp7).
 
