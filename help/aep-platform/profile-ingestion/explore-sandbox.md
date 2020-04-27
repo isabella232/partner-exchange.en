@@ -55,6 +55,8 @@ Submit a [support request](https://adobeexchangeec.zendesk.com/hc/en-us/requests
 
 ## Navigating the AEP UI
 
+Watch the AEP UI [introduction video](https://docs.adobe.com/content/help/en/platform-learn/tutorials/intro-to-platform/interface-tour.html) 
+
 There are 12 primary areas within the AEP UI that can be navigated via the left-hand panel. However, the most important sections for this type of integration are Schemas, Datasets, and Profiles.
 
 * Home - the landing screen
