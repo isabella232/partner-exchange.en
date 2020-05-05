@@ -9,9 +9,7 @@ description: Importing batch files into AEP
 ## Overview
 
 
-AEP can ingest batch files that contain profile data from a flat file (such as parquet) or data that conforms to a known schema in the Experience Data Model (XDM) registery.
-
-AEP can accept files in the following formats: JSON, Parquet, and CSV.
+AEP can ingest data using batch files. The following formats are accepted: JSON, Parquet, and CSV.
 
 This article will cover the following:
 
