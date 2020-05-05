@@ -5,9 +5,11 @@ description: Using APIs to Access the Unified Profile
 
 # Access the Unified Profile using the Profile API
 
+
 ## Overview
 
-The Adobe Experience Platform can access the customer profile in real-time; the [Experience Platform Real-time Customer Profile API](https://adobe.ly/2TtDHWr) has been designed for interacting with that. A tutorial has been created to help users understand how to [access the real-time customer profile data using the Profile API](https://adobe.ly/39vk8CM).
+
+The Adobe Experience Platform can access the customer profile in real-time; the [Experience Platform Real-time Customer Profile API](https://adobe.ly/2TtDHWr) has been designed for interacting with that. See this [tutorial](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html) for how to access the real-time customer profile data using the Profile API.
 
 This article will substantially reference the tutorial linked above.
 
@@ -15,15 +17,18 @@ The [Postman collection](https://github.com/Adobe-Marketing-Cloud/exchange-aep-p
 
 For this section, use the Postman folder 5: Profile Lookup, 5a: Real-time lookup PROFILE data OR 5b: Real-time lookup EVENT data.
 
+
 ## Using the API
+
 
 ### Authenticate to Platform
 
-In order to work with any data in the Adobe Experience platform an application needs to be authenticate to the system. The [authentication guide](https://adobe.ly/2ICItuJ) has everything needed to do this.
 
-This [step-by-step tutorial](https://adobe.ly/2PUWeZz) has what is needed to authenticate to the Experience Platform. Any troubleshooting issues in regard to authentication errors can first ne worked through following the tutorial.
+See [this](https://docs.adobe.com/content/help/en/experience-platform/tutorials/authentication.html) authentication tutorial before making any of the calls below.
+
 
 ### API Path
+
 
 The platform gateway URL needed for the real-time customer profile API is: `https://platform.adobe.io/`
 
@@ -31,7 +36,9 @@ The base path for the API is: `/data/core/ups/access/entities`
 
 An example of a complete path is: `https://platform.adobe.io/data/core/ups/access/entities`
 
+
 ### Header Information
+
 
 The header must include:
 * Authorization
@@ -42,13 +49,17 @@ The header must include:
 
 More information explained about the header can be found in the [tutorial](https://adobe.ly/2PTHuKv).
 
-## Access Real-time Customer Profiles by Identities
 
-Below are steps necessary to accessing the Profile API. These are only a few functions with examples, many more can be accomplished that are not listed in the tutorial or this article. All possible functions can be found in the Profile API [documentation](https://adobe.ly/2TtDHWr).
+## Access Real-time Customer Profiles using Identities
 
-### Access Profile Data by Identity
 
-The API allows to access profile information by an identify. This is done by making a GET request to /access/entities with the entity ID as one of the parameters and entity ID namespace. NOTE: Keep in mind that any request that returns 50 records will only deliver a 422 HTTP status and a message that reads “too many related identities” and the search will need to be narrowed with more parameters.
+The Profile API enables access to Profiles using a identities via a GET request. The sections below will follow this [guide](https://docs.adobe.com/content/help/en/experience-platform/profile/api/entities.html).
+
+
+### Access Profile Data using Identity
+
+
+The API gives access to profile information using identity. This is done by making a GET request to /access/entities with the entity ID as one of the parameters and entity ID namespace. NOTE: Keep in mind that any request that returns 50 records will only deliver a 422 HTTP status and a message that reads “too many related identities” and the search will need to be narrowed with more parameters.
 
 Request:
 
@@ -132,9 +143,11 @@ Response:
 }
 ```
 
+
 ### Access Profiles by List of Identities
 
-The API allows access to many profiles by a list of identities by using a POST request to the /access/entities endpoint and providing the identities in the payload. These identities consist of an ID value (entityId) and an identity namespace (entityIdNS).
+
+The API gives access to profiles using a list of identities by using a POST request to the /access/entities endpoint and providing the identities in the payload. These identities consist of an ID value (entityId) and an identity namespace (entityIdNS).
 
 Request:
 The following request retrieves the names and email addresses of several customers by a list of identities:
@@ -315,11 +328,14 @@ A successful response returns the requested fields of entities specified in the 
 }
 ```
 
+
 ## Time Series Events
 
-Below are steps necessary to accessing the real-time profile events. These are only a few functions with examples, many more can be accomplished that are not listed in the tutorial or this article. All possible functions can be found in the Profile API [documentation](https://adobe.ly/2TtDHWr).
+Partners can access time series events by the identity of the associated profile entity by making a GET request to the /access/entities endpoint.
+
 
 ### Access Time Series Events for a Profile by Identity
+
 
 Time series events are accessed by the identity of their associated profile entity by making a GET request to the /access/entities endpoint. This identity consists of an ID value (entityId) and an identity namespace (entityIdNS).
 
@@ -385,7 +401,9 @@ A successful response returns a paginated list of time series events and associa
 }
 ```
 
+
 ### Pagination for Time Series Events for a Profile
+
 
 Results are paginated when retrieving time series events. If there are subsequent pages of results, the response's _page.next parameter will contain an ID. Additionally, the response's _links.next.href parameter provides a request URI for retrieving the subsequent page.
 
@@ -454,9 +472,11 @@ A successful response returns the next page of results. This example demonstrate
 }
 ```
 
+
 ## Reference
 
+
 * [Real-time Customer Profile API](https://adobe.ly/2TtDHWr)
-* [Access Real-time Customer profile data using the Profile API tutorial](https://adobe.ly/39vk8CM)
-* [Experience Platform Authentication Guide](https://adobe.ly/2ICItuJ)
-* [Experience Platform Authentication tutorial](https://adobe.ly/2PUWeZz)
+* [Access Real-time Customer profile data using the Profile API tutorial](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html)
+* [Experience Platform Authentication Guide](https://docs.adobe.com/content/help/en/experience-platform/tutorials/authentication.html)
+

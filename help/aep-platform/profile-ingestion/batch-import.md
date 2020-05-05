@@ -5,7 +5,9 @@ description: Importing batch files into AEP
 
 # Importing Batch Data to AEP
 
+
 ## Overview
+
 
 AEP can ingest batch files that contain profile data from a flat file (such as parquet) or data that conforms to a known schema in the Experience Data Model (XDM) registery.
 
@@ -26,12 +28,15 @@ For all calls in this tutorial, use Postman call folders: 4: Batch Import, 4a: B
 
 ## Batch Ingestion Prerequisites
 
+
 * Define a schema and create a dataset.
 * Data must be formatted in JSON, Parquet, or CSV.
 * [Authenticate to the platform](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md).
 * Gather the values for required headers from the authentication tutorial linked above.
 
+
 ## Batch Ingestion Best Practices and Limits
+
 
 * Maximum batch size: 100 GB
 * Maximum number of files per batch: 1500
@@ -41,6 +46,7 @@ For all calls in this tutorial, use Postman call folders: 4: Batch Import, 4a: B
 
 
 ## Create a Batch
+
 
 In this tutorial we will use JSON as the format. More format examples can be found in the [developer guide](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md)
 Create a batch using JSON as the input format (be sure to include a dataset ID and that your data conforms to the XDM schema linked to the dataset):
@@ -86,7 +92,9 @@ Response:
 
  ``` 
 
+
 ## Upload Files
+
 
 Files can now be uploaded to the newly created batch (using the batch_id from the response above).
 
@@ -112,7 +120,9 @@ Response:
 
  ``` 
 
+
 ## Complete a Batch
+
 
 Once all the files have been uploaded, this call will signal that the batch is ready for promotion:
 
@@ -134,7 +144,9 @@ Response:
 
  ``` 
 
+
 ## Check the Status of a Batch
+
 
 The batch status can be checked in the UI or via the API (see call below). To check in the UI, navigate to the DataSet to see the status.
 
@@ -242,7 +254,9 @@ Response:
 
  ``` 
 
+
 ## Reference Articles
+
 
 * [Data Ingestion API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs)
 * [Batch Ingestion Overview](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/ingest_architectural_overview.md)
