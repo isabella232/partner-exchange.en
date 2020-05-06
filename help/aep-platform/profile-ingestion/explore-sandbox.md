@@ -44,7 +44,7 @@ Partners are given access to various Adobe Experience Cloud products (non-AEP pr
   * Description: Provide a brief description of the integration use case(s) that require the use of an AEP sandbox
   * Be sure to also provide all of the user names and emails that should be added to the AEP sandbox. It is possible for additional users to be added after the request is made but the users will need to be added by Adobe via an additional ticket (see below).
 * The invite will be sent to the email address given in the form.
-* The invite should be received within 3-X business days after submitting the form.
+* The invite should be received within 3-7 business days after submitting the form.
 
 
 ## Receiving the Email Invitation 
