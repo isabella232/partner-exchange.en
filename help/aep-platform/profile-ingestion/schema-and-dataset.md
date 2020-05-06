@@ -13,7 +13,7 @@ The [Postman collection](https://github.com/Adobe-Marketing-Cloud/exchange-aep-p
 
 
 ### What is a schema?
-
+<p>&nbsp;</p>
 
 A schema is a set of rules that represent and validate the structure and format of data. At a high level, schemas provide an abstract definition of a real-world object (such as a person) and outline what data should be included in each instance of that object (such as first name, last name, birthday, and so on). Schemas can be created in the UI or using the Experience Platform APIs.
 
@@ -22,31 +22,31 @@ See [this documentation](https://www.adobe.io/apis/experienceplatform/home/xdm/x
 
 ### Creating a schema 
 
-
-You can build an example schema using the UI by following this [tutorial](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html). This example uses the loyalty program profile schema. While the example is a profile schema, event-based schemas can be used using a similar process.
-
-If you'd like to build a schema using the APIs, you must have an existing Adobe I/O integration with Experience Platform permissions enabled. If you don't already have one, check out the following documentation for information on how to [create an I/O integration](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md).
-
+<p>&nbsp;</p>
+Partners can build a schema using the UI by following this [tutorial](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html). This example uses the loyalty program profile schema. While the example is a profile schema, event-based schemas can be used using a similar process.
+<p>&nbsp;</p>
+To use the APIs, partners must have an existing Adobe I/O integration with Experience Platform permissions enabled. See this guide to [create an I/O integration](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md).
+<p>&nbsp;</p>
 Then visit [this link](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-api.html) to learn how to build schemas using the API.
-
+<p>&nbsp;</p>
 To create a schema via Postman, use the calls contained in folders 1: Create Schema, 1a: Create Schema for PROFILE data OR 1b: Create Schema for EVENT data.
 
 
 ## Datasets
 
-
+<p>&nbsp;</p>
 ### What is a dataset?
 
-
+<p>&nbsp;</p>
 All data that is brought into Adobe Experience Platform is contained in datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store.
-
+<p>&nbsp;</p>
 Catalog Service is the system of record for data location and lineage within Experience Platform, and is used to create and manage datasets. Catalog tracks the metadata for each dataset, which includes a reference to the Experience Data Model (XDM) schema the dataset conforms to (explained in the next section) and the number of records ingested into that dataset.
-
+<p>&nbsp;</p>
 Go [here](https://docs.adobe.com/content/help/en/experience-platform/catalog/datasets/overview.html) for a detailed dataset overview. 
 
 
 ### Creating a dataset
-
+<p>&nbsp;</p>
 
 ![Creating Dataset Animated Gif](images/creating_a_dataset.gif "Creating a Dataset")
 
@@ -55,18 +55,18 @@ Create a dataset via the UI:
 1. Click create dataset
 2. Create from schema
 3. Click finish
-
+<p>&nbsp;</p>
 Go [here](https://docs.adobe.com/content/help/en/experience-platform/catalog/datasets/user-guide.html) for a dataset user guide.
-
+<p>&nbsp;</p>
 
 [Create a dataset using the APIs](https://docs.adobe.com/content/help/en/experience-platform/catalog/datasets/create.html).
-
+<p>&nbsp;</p>
 To create a dataset via Postman, use folders 2: Create Dataset, 2a: Create dataset for PROFILE data OR 2b: Create dataset for EVENT data.
 
 
 
 ## Schema and dataset best practices for partners
-
+<p>&nbsp;</p>
 * Partner data should use a separate profile schema vs creating a mix-in for a customer's existing profile schema and experience schema. 
 * Partners should use Adobe classes and mix-ins where possible.
 * Partners should upload their data using a separate dataset instead of trying to combine their data into an existing dataset.
