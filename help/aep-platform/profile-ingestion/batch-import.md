@@ -5,11 +5,8 @@ description: Importing batch files into AEP
 
 # Importing Batch Data to AEP
 
-
 ## Overview
 
-
-<p>&nbsp;</p>
 AEP can ingest batch files that contain profile data from a flat file (such as parquet) or data that conforms to a known schema in the Experience Data Model (XDM) registery.
 
 AEP can ingest data using batch files. The following formats are accepted: JSON, Parquet, and CSV.
@@ -23,22 +20,17 @@ This article will cover the following:
 * How to check the status of a batch
 
 The [Postman collection](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman) will be referenced throughout the article using the associated calls by number. More details on installing and using the Postman collection are available on the Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) page. There are also sample datasets of [loyalty](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) and [profile](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) data.
-<p>&nbsp;</p>
 
 For all calls in this tutorial, use Postman call folders: 4: Batch Import, 4a: Batch import for PROFILE data OR 4b: Batch import for EVENT data.
 
-
 ## Batch Ingestion Prerequisites
-<p>&nbsp;</p>
 
 * Define a schema and create a dataset.
 * Data must be formatted in JSON, Parquet, or CSV.
 * [Authenticate to the platform](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md).
 * Gather the values for required headers from the authentication tutorial linked above.
 
-
 ## Batch Ingestion Best Practices and Limits
-<p>&nbsp;</p>
 
 * Maximum batch size: 100 GB
 * Maximum number of files per batch: 1500
@@ -46,15 +38,12 @@ For all calls in this tutorial, use Postman call folders: 4: Batch Import, 4a: B
 * Maximum number of properties or fields per row: 10,000
 * Maximum number of batches per minute, per user: 138
 
-
 ## Create a Batch
-<p>&nbsp;</p>
 
 In this tutorial we will use JSON as the format. More format examples can be found in the [developer guide](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md)
 Create a batch using JSON as the input format (be sure to include a dataset ID and that your data conforms to the XDM schema linked to the dataset):
 
- ``` JSON
-
+```json
 curl -X POST "https://platform.adobe.io/data/foundation/import/batches" \
   -H "Accept: application/json" \
   -H "x-gw-ims-org-id: {IMS_ORG}" \
@@ -67,13 +56,11 @@ curl -X POST "https://platform.adobe.io/data/foundation/import/batches" \
                 "format": "json"
            }
       }'
-
- ``` 
+```
 
 Response:
 
- ``` JSON
-
+```json
 {
     "id": "{BATCH_ID}",
     "imsOrg": "{IMS_ORG}",
@@ -91,17 +78,13 @@ Response:
     "createdUser": "{USER_ID}",
     "updatedUser": "{USER_ID}"
 }
-
- ``` 
-
+``` 
 
 ## Upload Files
-<p>&nbsp;</p>
 
 Files can now be uploaded to the newly created batch (using the batch_id from the response above).
 
- ``` JSON
-
+```json
 curl -X PUT "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID}/datasets/{DATASET_ID}/files/{FILE_NAME}.json" \
   -H "content-type: application/octet-stream" \
   -H "x-gw-ims-org-id: {IMS_ORG}" \
@@ -109,65 +92,53 @@ curl -X PUT "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID}
   -H "Authorization: Bearer {ACCESS_TOKEN}" \
   -H "x-api-key : {API_KEY}" \
   --data-binary "@{FILE_PATH_AND_NAME}.json"
+```
 
- ``` 
-
->Note: The API only supports single-part upload, meaning each file/micro-batch will need to be uploaded with individual calls. Ensure that the content-type is application/octet-stream.
+>[!NOTE]
+>
+>The API only supports single-part upload, meaning each file/micro-batch will need to be uploaded with individual calls. Ensure that the content-type is application/octet-stream.
 
 Response:
 
- ``` 
-
+``` 
 200 OK
-
- ``` 
-
+```
 
 ## Complete a Batch
 
-<p>&nbsp;</p>
 Once all the files have been uploaded, this call will signal that the batch is ready for promotion:
 
- ``` JSON
-
+```json
 curl -X POST "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID}?action=COMPLETE" \
   -H "x-gw-ims-org-id: {IMS_ORG}" \
   -H "x-sandbox-name: {SANDBOX_NAME}" \
   -H "Authorization: Bearer {ACCESS_TOKEN}" \
   -H "x-api-key : {API_KEY}"
-
- ``` 
+```
 
 Response:
 
- ``` 
-
+``` 
 200 OK
-
- ``` 
-
+```
 
 ## Check the Status of a Batch
-<p>&nbsp;</p>
 
 The batch status can be checked in the UI or via the API (see call below). To check in the UI, navigate to the DataSet to see the status.
-<p>&nbsp;</p>
+
 The various batch ingestion statuses can be found [here](https://adobe.ly/2TMMCmj).
 
- ``` JSON
-
+```json
 curl GET "https://platform.adobe.io/data/foundation/catalog/batch/{BATCH_ID}" \
   -H "Authorization: Bearer {ACCESS_TOKEN}" \
   -H "x-gw-ims-org-id: {IMS_ORG}" \
   -H "x-sandbox-name: {SANDBOX_NAME}" \
   -H "x-api-key: {API_KEY}"
-
- ``` 
+```
 
 Response:
 
- ``` JSON
-
+```json
 {
     "{BATCH_ID}": {
         "imsOrg": "{IMS_ORG}",
@@ -253,12 +224,9 @@ Response:
         }
     }
 }
-
- ``` 
-
+```
 
 ## Reference Articles
-<p>&nbsp;</p>
 
 * [Data Ingestion API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs)
 * [Batch Ingestion Overview](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/ingest_architectural_overview.md)
