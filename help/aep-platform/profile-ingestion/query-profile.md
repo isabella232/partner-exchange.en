@@ -5,59 +5,47 @@ description: Using APIs to Access the Unified Profile
 
 # Access the Unified Profile using the Profile API
 
-
 ## Overview
 
-<p>&nbsp;</p>
 The Adobe Experience Platform can access the customer profile in real-time; the [Experience Platform Real-time Customer Profile API](https://adobe.ly/2TtDHWr) has been designed for interacting with that. See this [tutorial](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html) for how to access the real-time customer profile data using the Profile API.
-<p>&nbsp;</p>
-This article will substantially reference the tutorial linked above.
-<p>&nbsp;</p>
-The [Postman collection](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman) will be referenced throughout the article using the associated calls by number. More details on installing and using the Postman collection are available on the Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) page. There are also sample datasets of [loyalty](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) and [profile](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) data.
-<p>&nbsp;</p>
-For this section, use the Postman folder 5: Profile Lookup, 5a: Real-time lookup PROFILE data OR 5b: Real-time lookup EVENT data.
 
+This article will substantially reference the tutorial linked above.
+
+The [Postman collection](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman) will be referenced throughout the article using the associated calls by number. More details on installing and using the Postman collection are available on the Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) page. There are also sample datasets of [loyalty](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) and [profile](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) data.
+
+For this section, use the Postman folder 5: Profile Lookup, 5a: Real-time lookup PROFILE data OR 5b: Real-time lookup EVENT data.
 
 ## Using the API
 
-
 ### Authenticate to Platform
 
-<p>&nbsp;</p>
-See [this](https://docs.adobe.com/content/help/en/experience-platform/tutorials/authentication.html) authentication tutorial before making any of the calls below.
-
+See [this authentication tutorial](https://docs.adobe.com/content/help/en/experience-platform/tutorials/authentication.html) before making any of the calls below.
 
 ### API Path
-<p>&nbsp;</p>
 
 The platform gateway URL needed for the real-time customer profile API is: `https://platform.adobe.io/`
-<p>&nbsp;</p>
-The base path for the API is: `/data/core/ups/access/entities`
-<p>&nbsp;</p>
-An example of a complete path is: `https://platform.adobe.io/data/core/ups/access/entities`
 
+The base path for the API is: `/data/core/ups/access/entities`
+
+An example of a complete path is: `https://platform.adobe.io/data/core/ups/access/entities`
 
 ### Header Information
 
-
 The header must include:
+
 * Authorization
 * x-gw-ims-org-id - obtain through console.adobe.io
 * x-api-key - obtain through console.adobe.io
 * x-sandbox-name – obtained from the Adobe Integration Manager
 * Content-Type: application/json
-<p>&nbsp;</p>
-More information explained about the header can be found in the [tutorial](https://adobe.ly/2PTHuKv).
 
+More information explained about the header can be found in the [tutorial](https://adobe.ly/2PTHuKv).
 
 ## Access Real-time Customer Profiles using Identities
 
-<p>&nbsp;</p>
 The Profile API enables access to Profiles using a identities via a GET request. The sections below will follow this [guide](https://docs.adobe.com/content/help/en/experience-platform/profile/api/entities.html).
 
-
 ### Access Profile Data using Identity
-<p>&nbsp;</p>
 
 The API gives access to profile information using identity. This is done by making a GET request to /access/entities with the entity ID as one of the parameters and entity ID namespace. NOTE: Keep in mind that any request that returns 50 records will only deliver a 422 HTTP status and a message that reads “too many related identities” and the search will need to be narrowed with more parameters.
 
@@ -143,12 +131,10 @@ Response:
 }
 ```
 
-
 ### Access Profiles by List of Identities
 
-<p>&nbsp;</p>
 The API gives access to profiles using a list of identities by using a POST request to the /access/entities endpoint and providing the identities in the payload. These identities consist of an ID value (entityId) and an identity namespace (entityIdNS).
-<p>&nbsp;</p>
+
 Request:
 The following request retrieves the names and email addresses of several customers by a list of identities:
 
@@ -328,17 +314,14 @@ A successful response returns the requested fields of entities specified in the 
 }
 ```
 
-
 ## Time Series Events
-<p>&nbsp;</p>
+
 Partners can access time series events by the identity of the associated profile entity by making a GET request to the /access/entities endpoint.
 
-
 ### Access Time Series Events for a Profile by Identity
-<p>&nbsp;</p>
 
 Time series events are accessed by the identity of their associated profile entity by making a GET request to the /access/entities endpoint. This identity consists of an ID value (entityId) and an identity namespace (entityIdNS).
-<p>&nbsp;</p>
+
 Request:
 The following request finds a profile entity by ID, and retrieves the values for the properties endUserIDs, web, and channel **for all** time series events associated with the entity.
 
@@ -352,6 +335,7 @@ curl -X GET \
 ```
 
 Response:
+
 A successful response returns a paginated list of time series events and associated fields that were specified in the request parameters.
 
 ```
@@ -401,12 +385,10 @@ A successful response returns a paginated list of time series events and associa
 }
 ```
 
-
 ### Pagination for Time Series Events for a Profile
-<p>&nbsp;</p>
 
 Results are paginated when retrieving time series events. If there are subsequent pages of results, the response's _page.next parameter will contain an ID. Additionally, the response's _links.next.href parameter provides a request URI for retrieving the subsequent page.
-<p>&nbsp;</p>
+
 Request:
 
 The following request retrieves the next page of results by using the _links.next.href URI as the request path.
@@ -472,11 +454,8 @@ A successful response returns the next page of results. This example demonstrate
 }
 ```
 
+## Reference Articles
 
-## Reference
-
-<p>&nbsp;</p>
 * [Real-time Customer Profile API](https://adobe.ly/2TtDHWr)
 * [Access Real-time Customer profile data using the Profile API tutorial](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html)
 * [Experience Platform Authentication Guide](https://docs.adobe.com/content/help/en/experience-platform/tutorials/authentication.html)
-
