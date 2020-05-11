@@ -18,8 +18,6 @@ This article will cover the following:
 
 For a general overview of the Sandbox technology in AEP, see this [article](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html).
 
-For a general overview of the Sandbox technology in AEP, see this [article](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html).
-
 ## The Shared AEP Sandbox
 
 

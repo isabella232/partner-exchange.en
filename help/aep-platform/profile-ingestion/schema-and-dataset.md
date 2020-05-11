@@ -25,8 +25,6 @@ Then visit [this link](https://docs.adobe.com/content/help/en/experience-platfor
 
 To create a schema via Postman, use the calls contained in folders 1: Create Schema, 1a: Create Schema for PROFILE data OR 1b: Create Schema for EVENT data.
 
-To create a schema via Postman, use the calls contained in folders 1: Create Schema, 1a: Create Schema for PROFILE data OR 1b: Create Schema for EVENT data.
-
 ## Datasets
 
 
@@ -60,8 +58,6 @@ Go [here](https://docs.adobe.com/content/help/en/experience-platform/catalog/dat
 
 To create a dataset via Postman, use folders 2: Create Dataset, 2a: Create dataset for PROFILE data OR 2b: Create dataset for EVENT data.
 
-
-To create a dataset via Postman, use folders 2: Create Dataset, 2a: Create dataset for PROFILE data OR 2b: Create dataset for EVENT data.
 
 ## Schema and dataset best practices for partners
 
