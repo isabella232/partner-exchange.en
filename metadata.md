@@ -1,13 +1,13 @@
 ---
 cloud: experience-cloud
 solution-title: Partner Exchange
-solution-hub-url: 
+solution-hub-url: https://partners.adobe.com/exchangeprogram/experiencecloud
 solution-image: help/assets/experience-cloud-logo-24.png
-getting-started-title: Label 2
-getting-started-url: 
-tutorials-title: Label 3
-tutorials-url: 
-git-repo: https://git.corp.adobe.com/AdobeDocs/partner-exchange.en
+getting-started-title: Documentation
+getting-started-url: https://docs.adobe.com/content/help/en/experience-platform/landing/documentation/overview.html
+tutorials-title: Postman Collection
+tutorials-url: https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman
+git-repo: https://github.com/AdobeDocs/partner-exchange.en
 index: no
 ---
 
