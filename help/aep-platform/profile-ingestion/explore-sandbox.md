@@ -8,7 +8,7 @@ description: Access and Explore the AEP Sandbox
 
 ## Overview
 
-<p>&nbsp;</p>
+
 This article will cover the following:
 
 * The differences between an existing Adobe Exchange Partner sandbox Organization and the shared AEP sandbox.
@@ -16,14 +16,14 @@ This article will cover the following:
 * Receiving an email invitation to the AEP shared sandbox.
 * Inviting new users in the adminconsole.
 * Navigating the AEP UI.
-<p>&nbsp;</p>
+
 For a general overview of the Sandbox technology in AEP, see this [article](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html).
 
 
 ## The Shared AEP Sandbox
-<p>&nbsp;</p>
 
-Partners are given access to various Adobe Experience Cloud products (non-AEP products like Analytics, Target, Launch, etc) via their own Adobe Experience Cloud Org (non-shared). Partners are given system administrator access rights to their own Org to manage users and other permissions. Adobe Experience Platform (AEP) is treated differently than other Adobe sandboxes. Here are the key differences:
+
+Exchange partners are given access to various Adobe Experience Cloud products (non-AEP products like Analytics, Target, Launch, etc) via their own Adobe Experience Cloud Org (non-shared). Partners are given system administrator access rights to their own Org to manage users and other permissions. Adobe Experience Platform (AEP) is treated differently than other Adobe sandboxes. Here are the key differences:
 
 * Access to AEP will NOT be through the partners main Adobe Experience Cloud sandbox Org.
 * Access to AEP will be through a shared Adobe Exchange Org.
@@ -34,7 +34,7 @@ Partners are given access to various Adobe Experience Cloud products (non-AEP pr
 
 
 ## How to Request Access to the Shared AEP Sandbox
-<p>&nbsp;</p>
+
 
 * Submit a [support request](https://adobeexchangeec.zendesk.com/hc/en-us/requests/new) with the following information:
   * Email Address
@@ -48,7 +48,7 @@ Partners are given access to various Adobe Experience Cloud products (non-AEP pr
 
 
 ## Receiving the Email Invitation 
-<p>&nbsp;</p>
+
 
 The primary contact that requested the AEP sandbox will receive an automated email inviting them to "get started" with the Adobe Experience Platform. The primary contact will also have some administration privileges which will be covered in the next section.
 
@@ -56,7 +56,7 @@ Instead of selecting the "get started" button in the email, navigate directly to
 
 
 ## Inviting Additional Users
-<p>&nbsp;</p>
+
 
 Submit a [support request](https://adobeexchangeec.zendesk.com/hc/en-us/requests/new) with the following information:
 
@@ -68,10 +68,10 @@ Submit a [support request](https://adobeexchangeec.zendesk.com/hc/en-us/requests
 
 
 ## Navigating the AEP UI
-<p>&nbsp;</p>
+
 
 Watch the AEP UI [introduction video](https://docs.adobe.com/content/help/en/platform-learn/tutorials/intro-to-platform/interface-tour.html)
-<p>&nbsp;</p>
+
 
 There are 12 primary areas within the AEP UI that can be navigated via the left-hand panel. However, the most important sections for this type of integration are Schemas, Datasets, and Profiles.
 

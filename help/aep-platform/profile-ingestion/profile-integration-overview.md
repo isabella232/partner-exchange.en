@@ -7,7 +7,7 @@ description: Overview for the Platform Profile Ingestion and Access Integration 
 
 
 ## Overview
-<p>&nbsp;</p>
+
 
 Partners should use this integration guide to assist them in building out ingress and egress functionality with the Adobe Experience Platform (AEP). There are APIs for batch ingestion, streaming ingestion, and Unified Profile access (egress). 
 
@@ -17,7 +17,7 @@ More details on installing and using the Postman collection are available on the
 
 
 ## Integration Use-Case Example: Interactive Voice Response System
-<p>&nbsp;</p>
+
 
 "For integrators, the Experience Platform APIs provide all capabilities of the platform that are offered throughout the user interface, but now with the ability to create customer workflows and automated data flows. As an integrator, you periodically check the status of datasets, set up new data ingestion procedures, and integrate your own audience activation solution with the Unified Profile.
 
@@ -27,13 +27,13 @@ The next time a customer calls into the Call Center, they will first be answered
 
 
 ## General Resources
-<p>&nbsp;</p>
+
 
 * AEP [Product Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/documentation/overview.html).
 * AEP [Extensibility](https://www.adobe.com/insights/experience-platform-api-extensibility.html).
 
 
 ## Questions or Feedback?
-<p>&nbsp;</p>
+
 
 Please submit all questions and feedback via the [support channel](https://adobeexchangeec.zendesk.com/hc/en-us/requests/new)
