@@ -63,6 +63,8 @@ Response:
 }
 ```
 
+Be sure to save the ID provided in the response above for future streaming ingestion calls (the Postman collection will save this for you in the CONNECTION_ID environment variable).
+
 ## Stream Profile Data to AEP
 
 For this section, use Postman call folders: 3: Real-time import, 3a: Real-time import for PROFILE data.
